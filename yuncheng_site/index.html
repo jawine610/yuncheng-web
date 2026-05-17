@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的家乡——山西运城</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 顶部导航栏 -->
+    <header class="top">
+        <h1 class="logo">我的家乡——山西运城</h1>
+        <nav>
+            <a href="#about">城市概况</a>
+            <a href="#scenery">特色景点</a>
+            <a href="#table">推荐表格</a>
+            <a href="#video">家乡视频</a>
+            <a href="#form">留言表单</a>
+        </nav>
+    </header>
+
+    <!-- 首页大图区域 -->
+    <section class="banner">
+        <div class="banner-text">
+            <h2>关公故里，晋是好运</h2>
+            <p>这里是山西省运城市，一座有历史、有文化、有烟火气的城市。</p>
+            <a href="#about" class="btn">开始了解</a>
+        </div>
+    </section>
+
+    <!-- 城市概况 -->
+    <section id="about" class="section">
+        <h2>一、城市概况</h2>
+        <p>
+            运城古称河东，位于山西省西南部，地处晋、陕、豫黄河金三角地区。
+            这里历史悠久，文化底蕴深厚，是中华文明的重要发祥地之一。
+        </p>
+        <p>
+            运城因“盐运之城”而得名，盐湖文化、关公文化、黄河文化都是这座城市的重要名片。
+            对我来说，运城不仅是一座城市，更是家乡记忆和成长印象的集合。
+        </p>
+    </section>
+
+    <!-- 特色景点 -->
+    <section id="scenery" class="section gray">
+        <h2>二、特色景点</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="images/saltlake.jpg" alt="运城盐湖">
+                <h3>运城盐湖</h3>
+                <p>运城盐湖被称为“中国死海”，是运城非常有代表性的自然景观。</p>
+            </div>
+
+            <div class="card">
+                <img src="images/guandi.jpg" alt="解州关帝庙">
+                <h3>解州关帝庙</h3>
+                <p>解州关帝庙是关公文化的重要代表，也是运城的文化名片之一。</p>
+            </div>
+
+            <div class="card">
+                <img src="images/yuncheng.jpg" alt="运城风光">
+                <h3>河东风光</h3>
+                <p>运城有黄河、中条山、古建筑和丰富的民俗文化，适合慢慢感受。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 表格区域 -->
+    <section id="table" class="section">
+        <h2>三、运城景点推荐表</h2>
+
+        <table>
+            <tr>
+                <th>景点名称</th>
+                <th>所在地区</th>
+                <th>推荐理由</th>
+                <th>适合人群</th>
+            </tr>
+            <tr>
+                <td>运城盐湖</td>
+                <td>盐湖区</td>
+                <td>自然风光独特，适合拍照打卡</td>
+                <td>游客、学生、摄影爱好者</td>
+            </tr>
+            <tr>
+                <td>解州关帝庙</td>
+                <td>盐湖区解州镇</td>
+                <td>关公文化代表，历史氛围浓厚</td>
+                <td>历史文化爱好者</td>
+            </tr>
+            <tr>
+                <td>鹳雀楼</td>
+                <td>永济市</td>
+                <td>因“白日依山尽，黄河入海流”而闻名</td>
+                <td>学生、诗词爱好者</td>
+            </tr>
+            <tr>
+                <td>普救寺</td>
+                <td>永济市</td>
+                <td>与《西厢记》故事有关，文化气息浓</td>
+                <td>文学爱好者、游客</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 视频区域 -->
+    <section id="video" class="section gray">
+        <h2>四、家乡视频</h2>
+        <p>下面可以放一段运城宣传视频，也可以放你自己拍摄的家乡短片。</p>
+
+        <video controls width="720">
+    <source src="videos/yuncheng.mp4" type="video/mp4">
+    您的浏览器不支持 video 标签。
+</video>
+    </section>
+
+    <!-- 表单区域 -->
+    <section id="form" class="section">
+        <h2>五、留言表单</h2>
+        <p>如果你也想了解运城，可以填写下面的小表单。</p>
+
+        <form onsubmit="showMessage(); return false;">
+            <label>你的姓名：</label>
+            <input type="text" placeholder="请输入姓名" required>
+
+            <label>你最想了解运城的哪一方面？</label>
+            <select required>
+                <option value="">请选择</option>
+                <option>历史文化</option>
+                <option>旅游景点</option>
+                <option>特色美食</option>
+                <option>风土人情</option>
+            </select>
+
+            <label>留言内容：</label>
+            <textarea rows="5" placeholder="请输入你的留言"></textarea>
+
+            <button type="submit">提交留言</button>
+        </form>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>网页制作者：张钧玮 | 主题：我的家乡山西运城</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("提交成功！欢迎了解我的家乡运城。");
+        }
+    </script>
+
+</body>
+</html>
